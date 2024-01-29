@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kwan's Insurance Inc.</title>
+  <link rel="stylesheet" type="text/css" href="CSS/services.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+   
+      $('#building-img').hover(function() {
+        var originalSrc = $(this).attr('src');
+        var newSrc = originalSrc.replace('building1.png', 'building2.png');
+        $(this).attr('src', newSrc);
+      }, function() {
+        var originalSrc = $(this).attr('src');
+        var newSrc = originalSrc.replace('building2.png', 'building1.png');
+        $(this).attr('src', newSrc);
+      });
+   
+      $('#life-img').hover(function() {
+        var originalSrc = $(this).attr('src');
+        var newSrc = originalSrc.replace('life1.jpeg', 'life2.jpeg');
+        $(this).attr('src', newSrc);
+      }, function() {
+        var originalSrc = $(this).attr('src');
+        var newSrc = originalSrc.replace('life2.jpeg', 'life1.jpeg');
+        $(this).attr('src', newSrc);
+      });
+
+      $('#dental-img').hover(function() {
+        var originalSrc = $(this).attr('src');
+        var newSrc = originalSrc.replace('dental1.jpeg', 'dental2.jpeg');
+        $(this).attr('src', newSrc);
+      }, function() {
+        var originalSrc = $(this).attr('src');
+        var newSrc = originalSrc.replace('dental2.jpeg', 'dental1.jpeg');
+        $(this).attr('src', newSrc);
+      });
+
+      $('#car-img').hover(function() {
+        var originalSrc = $(this).attr('src');
+        var newSrc = originalSrc.replace('car1.jpeg', 'car2.jpeg');
+        $(this).attr('src', newSrc);
+      }, function() {
+        var originalSrc = $(this).attr('src');
+        var newSrc = originalSrc.replace('car2.jpeg', 'car1.jpeg');
+        $(this).attr('src', newSrc);
+      });
+
+      $('#house-img').hover(function() {
+        var originalSrc = $(this).attr('src');
+        var newSrc = originalSrc.replace('house1.jpeg', 'house2.jpeg');
+        $(this).attr('src', newSrc);
+      }, function() {
+        var originalSrc = $(this).attr('src');
+        var newSrc = originalSrc.replace('house2.jpeg', 'house1.jpeg');
+        $(this).attr('src', newSrc);
+      });
+
+      $('#health-img').hover(function() {
+        var originalSrc = $(this).attr('src');
+        var newSrc = originalSrc.replace('health1.jpeg', 'health2.jpeg');
+        $(this).attr('src', newSrc);
+      }, function() {
+        var originalSrc = $(this).attr('src');
+        var newSrc = originalSrc.replace('health2.jpeg', 'health1.jpeg');
+        $(this).attr('src', newSrc);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="image/logo.png" alt="Kwan's Insurance Inc. Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+     <br><br>
+      <h1>Kwan's Insurance Inc</h1>
+      <p>Providing Reliable Insurance Solutions for Your Peace of Mind</p>
+       <img id="building-img" src="image/building1.png" alt="Kwan's Insurance Inc. office building">
+    </div>
+  </section>
+
+ <section class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="row">
+        <div class="column">
+          <h3>Life Insurance</h3>
+          <img id="life-img" src="image/life1.jpeg" alt="Life Insurance">
+          <p>Protect your loved ones and secure their financial future with our comprehensive life insurance coverage.</p>
+        </div>
+        <div class="column">
+          <h3>Dental Insurance</h3>
+          <img id="dental-img" src="image/dental1.jpeg" alt="Dental Insurance">
+          <p>Get coverage for your dental care needs, including preventive services, basic procedures, and major treatments.</p>
+        </div>
+        <div class="column">
+          <h3>Car Insurance</h3>
+          <img id="car-img" src="image/car1.jpeg" alt="Car Insurance">
+          <p>Ensure the protection of your vehicle against accidents, theft, and other unexpected events on the road.</p>
+        </div>
+        <div class="column">
+          <h3>House Insurance</h3>
+          <img id="house-img" src="image/house1.jpeg" alt="House Insurance">
+          <p>Protect your home and belongings from risks such as fire, burglary, natural disasters, and liability claims.</p>
+        </div>
+        <div class="column">
+          <h3>Health Insurance</h3>
+          <img id="health-img" src="image/health1.jpeg" alt="Health Insurance">
+          <p>Get coverage for medical expenses, hospitalization, preventive care, and other healthcare services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <footer>
+    <div class="container">
+      <p>Investing involves risk. There is always the potential of losing money when you invest in securities. Past performance does not guarantee future results. Asset allocation, rebalancing and diversification do not guarantee against risk in broadly declining markets.</p>
+      <div class="contact-info">
+        <p>© 2024 Kwan's Insurance Inc. All rights reserved.
+</p>
+        <p>(626)-XXX-XXXX</p>
+        <p>KwanInc@kinsurance.com</p>
+        <div class="social-media">
+          <a href="[Facebook URL]"><img src="image/facebook-icon.png" alt="Facebook"></a>
+          <a href="[Twitter URL]"><img src="image/twitter-icon.png" alt="Twitter"></a>
+          <a href="[Instagram URL]"><img src="image/instagram-icon.png" alt="Instagram"></a>
+        </div>
+      </div> 
+    </div>
+  </footer>
+</body>
+</html>
